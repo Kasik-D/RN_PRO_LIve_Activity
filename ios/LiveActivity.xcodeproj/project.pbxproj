@@ -24,6 +24,8 @@
 		8C9175D02C6D223E00D50AC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9175CF2C6D223E00D50AC4 /* Assets.xcassets */; };
 		8C9175D42C6D223E00D50AC4 /* Live ActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C9175C12C6D223C00D50AC4 /* Live ActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8C9175D92C6D23DD00D50AC4 /* Live_ActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9175C92C6D223D00D50AC4 /* Live_ActivityLiveActivity.swift */; };
+		8CAECD6E2C91EFBF0049D99A /* LiveActivityModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAECD6D2C91EFBF0049D99A /* LiveActivityModule.swift */; };
+		8CAECD702C91EFD60049D99A /* RCTLiveActivityModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAECD6F2C91EFD60049D99A /* RCTLiveActivityModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 		8C9175CD2C6D223D00D50AC4 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		8C9175CF2C6D223E00D50AC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9175D12C6D223E00D50AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CAECD6D2C91EFBF0049D99A /* LiveActivityModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityModule.swift; sourceTree = "<group>"; };
+		8CAECD6F2C91EFD60049D99A /* RCTLiveActivityModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTLiveActivityModule.m; sourceTree = "<group>"; };
+		8CAECD712C91EFEA0049D99A /* nativeModules-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nativeModules-Bridging-Header.h"; sourceTree = "<group>"; };
 		D416AD8D3F8BA47C8EEBE852 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = LiveActivity/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -173,6 +178,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				8CAECD712C91EFEA0049D99A /* nativeModules-Bridging-Header.h */,
+				8CAECD6D2C91EFBF0049D99A /* LiveActivityModule.swift */,
+				8CAECD6F2C91EFD60049D99A /* RCTLiveActivityModule.m */,
 				13B07FAE1A68108700A75B9A /* LiveActivity */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LiveActivityTests */,
@@ -499,6 +507,8 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				8C9175D92C6D23DD00D50AC4 /* Live_ActivityLiveActivity.swift in Sources */,
+				8CAECD702C91EFD60049D99A /* RCTLiveActivityModule.m in Sources */,
+				8CAECD6E2C91EFBF0049D99A /* LiveActivityModule.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveActivity;
+				SWIFT_OBJC_BRIDGING_HEADER = "nativeModules-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -634,6 +645,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveActivity;
+				SWIFT_OBJC_BRIDGING_HEADER = "nativeModules-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
