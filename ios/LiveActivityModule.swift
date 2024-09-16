@@ -73,7 +73,7 @@ class LiveActivitiModule: RCTEventEmitter {
   // Sends events to JavaScript if there are listeners
   
   func sendEvent() {
-  
+    
     if hasListeners {
     
       Task {
@@ -87,8 +87,9 @@ class LiveActivitiModule: RCTEventEmitter {
           throw NSError(domain: "Error liveActivity is nil" , code: 555)
         
         }
-        
+          
         for try await data in liveActivity.pushTokenUpdates {
+          print(data)
         
           let myToken = data.map { String(format: "%02x", $0) }.joined()
           
